@@ -1,4 +1,4 @@
-# 🌼 Flower Classifier Backend (Flask + TensorFlow)
+# Flower Classifier Backend (Flask + TensorFlow)
 
 API REST para classificação de flores utilizando um modelo treinado em TensorFlow.
 Este backend recebe uma imagem enviada via multipart/form-data e retorna:
@@ -9,7 +9,7 @@ Este backend recebe uma imagem enviada via multipart/form-data e retorna:
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 
 - Python 3.10+
 - Flask
@@ -19,7 +19,7 @@ Este backend recebe uma imagem enviada via multipart/form-data e retorna:
 
 ---
 
-## 📁 Estrutura do projeto
+##  Estrutura do projeto
 
 flower_classifier_backend/
 │
@@ -44,13 +44,8 @@ flower_classifier_backend/
 └── README.md             # Documentação do backend
 
 ```yaml
-
-
----
-
-
-## ▶️ Como rodar o backend
-
+## Como rodar o backend
+```
 ### 1. Criar venv
 python -m venv venv
 
@@ -59,20 +54,23 @@ venv\Scripts\activate
 
 ```shell
 ### 3. Instalar dependências
+```
 pip install -r requirements.txt
 
 ```shell
 ### 4. Rodar a API
+```
 python app.py
 
 ```css
 A API ficará disponível em:
+```
 http://127.0.0.1:5000/predict
 
 ```yaml
 ---
 
-## 🧪 Testando a API
+## Testando a API
 
 Use o Postman:
 
@@ -96,3 +94,4 @@ json
     "tulips": 0.00008
   }
 }
+```
