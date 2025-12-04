@@ -24,14 +24,23 @@ Este backend recebe uma imagem enviada via multipart/form-data e retorna:
 flower_classifier_backend/
 │
 ├── app.py                # Servidor Flask (API)
+
 ├── train_model.py        # Script de treinamento do modelo
+
 ├── flower_model/         # Modelo salvo (TensorFlow SavedModel)
+
 │   ├── assets/
+
 │   ├── variables/
+
 │   ├── saved_model.pb
+
 │   └── fingerprint.pb
+
 ├── class_names.json      # Lista das classes treinadas
+
 ├── requirements.txt      # Dependências do projeto
+
 └── README.md             # Documentação do backend
 
 ```yaml
