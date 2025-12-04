@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual env
+venv/
+env/
+.venv/
+
+# TensorFlow model temporary files
+*.h5
+checkpoint/
+tensorboard_logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Flask
+instance/
+*.log
