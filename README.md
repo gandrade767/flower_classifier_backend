@@ -23,12 +23,16 @@ Este backend recebe uma imagem enviada via multipart/form-data e retorna:
 
 flower_classifier_backend/
 │
-├── app.py # Servidor Flask
-├── train_model.py # Script de treino do modelo
-├── flower_model/ # Modelo salvo (SavedModel)
-├── class_names.json # Classes reconhecidas
-├── requirements.txt # Dependências
-└── README.md
+├── app.py                # Servidor Flask (API)
+├── train_model.py        # Script de treinamento do modelo
+├── flower_model/         # Modelo salvo (TensorFlow SavedModel)
+│   ├── assets/
+│   ├── variables/
+│   ├── saved_model.pb
+│   └── fingerprint.pb
+├── class_names.json      # Lista das classes treinadas
+├── requirements.txt      # Dependências do projeto
+└── README.md             # Documentação do backend
 
 ```yaml
 
@@ -71,7 +75,7 @@ Use o Postman:
 
 Exemplo de resposta:
 
-```json
+json
 {
   "class": "dandelion",
   "confidence": 0.9987,
